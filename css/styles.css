@@ -895,7 +895,23 @@ progress {
 }
 
 .custom-img:hover {
-  transform: scale(1.05); /* Optional: Slight zoom on hover */
+  transform: scale(1.10); /* Optional: Slight zoom on hover */
+}
+
+.image-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.image-item {
+  flex: 1 0 50%; /* Makes two images per row */
+  padding: 10px;
+}
+
+@media (max-width: 768px) {
+  .image-item {
+      flex: 1 0 100%; /* Makes one image per row on small screens */
+  }
 }
 
 .g-5,
